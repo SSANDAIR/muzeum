@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Музей Каракола</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="script.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+  <div class="container">
+    <img src="логотип.png" alt="Museum Logo">
+    <a class="navbar-brand" href="#">Karakol Museum</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Фотогалерея</a></li>
+        <li class="nav-item"><a class="nav-link" href="#other">Разделы</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacts-map">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  <header>
+    <div class="overlay"></div>
+    <div class="intro">
+      <div id="home" class="container mt-5"></div>
+      <h1>Добро пожаловать в Исторический музей</h1>
+      <p>Погрузитесь в богатую культурную и историческую атмосферу страны через наши уникальные коллекции и экспозиции.</p>
+      <button class="btn" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+        Узнать больше
+      </button>
+      
+    </div>
+    <div class="ethno-border"></div>
+  </header>
+
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="Жылдыз.jpg" alt="Здание музея">
+      </div>
+      <div class="about-text">
+        <h2>О музее</h2>
+        <p>
+          Каракольский историко-краеведческий музей — это не просто собрание артефактов, это путешествие сквозь века.
+          Музей расположен в здании с богатой историей, ранее служившем православной церковью. 
+          Здесь история оживает в каждом зале, в каждой детали экспозиций.
+        </p>
+        <p>
+          С момента основания в 1948 году, музей стал хранителем культурного наследия региона — от древних скифов и сакских курганов до этнографии киргизов, быта переселенцев и реликвий советского времени.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="gallery" class="gallerys-section">
+    <h2 class="gallerys-title">Галерея</h2>
+    <p class="section-description">Окно в прошлое: в каждой фотографии — дух Иссык-Куля, старинные артефакты, образы жителей, сцены повседневной жизни и традиционного быта.</p>
+    <div class="gallerys-grid">
+      <div class="gallerys-item" data-aos="fade-up">
+        <img src="кувшин.jpg" alt="Узор вечности">
+        <div class="overlay">
+          <h3>Кувшины</h3>
+          <p>Орнамент, отражающий душу народа</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="тачка.jpg" alt="Серебро предков">
+        <div class="overlay">
+          <h3>Тачка</h3>
+          <p>старинное транспортное средство, использовавшееся в хозяйстве.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="купюра2.jpg" alt="Жилище степи">
+        <div class="overlay">
+          <h3>Старинные купюры</h3>
+          <p>денежные знаки прошлых эпох, отражающие экономическую историю.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="медаль.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Медали</h3>
+          <p> награды и знаки отличия, связанные с историческими событиями.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="кукла2.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Диаспоры</h3>
+          <p>экспозиция, рассказывающая о многообразии народов, живущих в регионе.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="кукла.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Диаспоры 2.0</h3>
+          <p>экспозиция, рассказывающая о многообразии народов, живущих в регионе.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="Жылдыз.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Тундук</h3>
+          <p>верхняя часть юрты, символ солнца и дома в кыргызской культуре.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="боозуй.ичи.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Внутрь Бооз-Уя</h3>
+          <p>интерьер юрты, показывающий быт и атмосферу кочевников.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="шыйырдак.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Шыйырдак</h3>
+          <p>традиционный войлочный ковёр с яркими узорами, символ уюта и мастерства.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="ээр.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Конское снаряжение</h3>
+          <p>элементы традиционной упряжи, используемой в кочевой культуре.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="элла.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Выставочная галерея Эллы Майар</h3>
+          <p>экспозиция, посвящённая знаменитой швейцарской путешественнице.</p>
+        </div>
+      </div>
+      <div class="gallerys-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="картинка2.jpg" alt="Образ защитника">
+        <div class="overlay">
+          <h3>Выставочная галерея Эллы Майар</h3>
+          <p>визуальные воспоминания о её путешествии по Центральной Азии.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+   
+
+  <section class="parallax-section">
+    <div class="parallax-content">
+      <h2>История в каждом кадре</h2>
+      <p>Погрузитесь в атмосферу прошлого с нашими архивными экспонатами и уникальными артефактами Каракольского музея.</p>
+    </div>
+  </section> 
+
+  
+  <section id="other">
+  <section id="fauna" class="section fauna-section">
+    <h2 class="section-title">Фауна Иссык-Куля</h2>
+    <p class="section-description">Познакомьтесь с диким миром Иссык-Куля: от хищников Тянь-Шаня до грациозных птиц.</p>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item">
+        <img src="барс.jpg" alt="Снежный барс">
+        <div class="text-block">
+          <h3>Снежный барс</h3>
+          <p>редкий хищник, символ дикой природы Тянь-Шаня.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="козлы.jpg" alt="Фламинго">
+        <div class="text-block">
+          <h3>Винторогий козел</h3>
+          <p>редкое животное с закрученными рогами, обитающее в горах.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="медведь.jpg" alt="Фламинго">
+        <div class="text-block">
+          <h3>Тянь-Шаньский бурый медведь</h3>
+          <p>мощный обитатель лесов и гор, занесён в Красную книгу.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="кабан.jpg" alt="Фламинго">
+        <div class="text-block">
+          <h3>Кабан</h3>
+          <p>житель лесов и предгорий, важный представитель местной экосистемы.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="птица.jpg" alt="Фламинго">
+        <div class="text-block">
+          <h3>Белоголовый син</h3>
+          <p>крупная хищная птица, санитар гор, охраняемая законом.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="аист.jpg" alt="Фламинго">
+        <div class="text-block">
+          <h3>Цапля</h3>
+          <p>изящная болотная птица, обитающая у водоёмов региона.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="лебедь.jpg" alt="Фламинго">
+        <div class="text-block">
+          <h3>Лебедь</h3>
+          <p>грациозная водоплавающая птица, символ чистоты и красоты природы.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="банка.jpg" alt="Фламинго">
+        <div class="text-block">
+          <h3>Лягушки</h3>
+          <p>представитель земноводных, обитает вблизи водоёмов и влажных мест.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="тундук.кару.jpg" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="боозуй.ичи.jpg" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="картинка2.jpg" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+
+  
+  <section class="jewelry-collage fade-in">
+    <div class="jewelry-item">
+      <img src="браслет.jpg" alt="Украшение 1">
+      <div class="jewelry-caption">
+        <h4>Браслеты</h4>
+        <p>Символ достатка и статуса в культуре кочевников.</p>
+      </div>
+    </div>
+    <div class="jewelry-item">
+      <img src="волос.jpg" alt="Украшение 2">
+      <div class="jewelry-caption">
+        <h4>Украшения</h4>
+        <p>Традиционное украшение невесты XIX века.</p>
+      </div>
+    </div>
+    <div class="jewelry-item">
+      <img src="иймек.jpg" alt="Украшение 3">
+      <div class="jewelry-caption">
+        <h4>Сережки</h4>
+        <p>Украшения из натуральных камней с глубоким смыслом.</p>
+      </div>
+    </div>
+    <div class="jewelry-item">
+      <img src="шакек.jpg" alt="Украшение 4">
+      <div class="jewelry-caption">
+        <h4>Кольца</h4>
+        <p>Мистический защитный символ, передаваемый по наследству.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="panfilov-section">
+    <div class="parallax-bg"></div>
+    <div class="panfilov-container">
+      <div class="panfilov-image">
+        <img src="панфилов.jpg" alt="Герои Панфиловцы">
+      </div>
+      <div class="panfilov-text">
+        <h2>Подвиг Панфиловцев</h2>
+        <div class="line-decor"></div>
+        <p>
+          В музее Каракола особое место занимает экспозиция, посвящённая подвигу 316-й стрелковой дивизии, сформированной в Киргизской ССР. Под командованием генерала Ивана Панфилова, в её рядах плечом к плечу сражались представители многих народов Советского Союза, в том числе и кыргызстанцы.
+          Эта экспозиция не только о великом подвиге на подступах к Москве, но и о вкладе кыргызского народа в Победу, о мужестве, сплочённости и памяти, которую мы храним.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="urkun" class="urkun-section">
+    <div class="urkun-intro">
+      <h2>Уркун — трагедия кыргызского народа</h2>
+      <p>В 1916 году тысячи кыргызов были вынуждены покинуть родные земли из-за восстания и репрессий Российской империи. Уркун стал одной из самых тяжёлых страниц в истории Кыргызстана.</p>
+    </div>
+  
+    <div class="urkun-grid">
+      <div class="urkun-item image">
+        <img src="уркун5.jpg" alt="Уркун 1">
+      </div>
+      <div class="urkun-item text">
+        <p>Тысячи семей с детьми переходили горные перевалы, спасаясь от преследований. Многие не пережили суровых условий Иссык-Кульского региона.</p>
+      </div>
+      <div class="urkun-item image">
+        <img src="уркун1.jpg" alt="Уркун 2">
+      </div>
+      <div class="urkun-item text">
+        <p>На экспозиции представлены документы, фотографии и архивные материалы, рассказывающие о трагедии 1916 года.</p>
+      </div>
+      <div class="urkun-item image wide">
+        <img src="уркун3.jpg" alt="Уркун 3">
+      </div>
+      <div class="urkun-item text">
+        <p>Музей Каракола хранит память об этих событиях, показывая, через что прошёл кыргызский народ в борьбе за жизнь и достоинство.</p>
+      </div>
+      <div class="urkun-item image">
+        <img src="укрун4.jpg" alt="Уркун 4">
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="invitation-section" data-aos="fade-up">
+    <div class="invitation-container">
+      <h2 class="invitation-heading">
+        На этом сайте представлена лишь часть экспонатов и информации музея.
+      </h2>
+      <p class="invitation-text">
+        Приглашаем вас посетить музей лично, чтобы погрузиться в атмосферу истории и культуры Каракола полностью.
+      </p>
+    </div>
+  </section>
+  
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    easing: 'ease-in-out',
+    once: true,
+  });
+</script>
+
+<section class="contact-section" id="contact">
+  <div class="container" data-aos="fade-up">
+    <div id="contacts-map" class="container mt-5"></div>
+    <h2>Как нас найти</h2>
+    <h4 class="mb-3">Контакты</h4>
+          <p><strong>Телефон:</strong> <a href="tel:+996550245639" class="text-primary">+996 550 245 639</a></p>
+          <p><strong>Телефон:</strong> <a href="tel:+996555337445" class="text-primary">+996 555 337 445</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@museum.kg" class="text-primary">karakol.museum@mail.ru</a></p>
+    <p class="address"><strong>Адрес:</strong> г. Каракол, ул. Жамансариева 164, Историко-краеведческий музей</p>
+    
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.177564757839!2d78.39105131571849!3d42.49338033532771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389d4b59043e9dd5%3A0x68c6077cfd97d6e!2z0JjQstC10YDRgNCw0LnRgdC60LjQuSDQutC-0LvQsA!5e0!3m2!1sru!2skg!4v1616173681677!5m2!1sru!2skg"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+</section>
+<footer class="custom-footer">
+  <div class="footer-content">
+    <p>Этот сайт разработан в рамках учебного проекта студентами 
+      <a href="https://www.ktu.edu.kg/" target="_blank">Университета им. К. Тыныстанова</a>,
+      Физико-математического и естественно-технического факультета, группа ПO-11.
+    </p>
+    <p> Все права защищены © 2025</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
